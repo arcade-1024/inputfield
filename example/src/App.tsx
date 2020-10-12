@@ -1,10 +1,19 @@
 import React from 'react'
 
-import { ExampleComponent } from 'inputfield'
+import { InputField } from 'inputfield'
 import 'inputfield/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <InputField
+      placeholder='hello'
+      type='text'
+      isFilled={false}
+      isBorder={false}
+      shadow={true}
+      isUnderlined={true}
+    />
+  )
 }
 
 export default App
